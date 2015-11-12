@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,31 +18,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="superYang" translatesAutoresizingMaskIntoConstraints="NO" id="g6u-rU-hnq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvB-pR-N4y" customClass="YCMultimediaShowBtn">
-                                <rect key="frame" x="285" y="285" width="30" height="30"/>
-                                <state key="normal" title="音频"/>
+                                <rect key="frame" x="270" y="285" width="60" height="30"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOX-tv-I8K" customClass="YCMultimediaShowBtn">
-                                <rect key="frame" x="345" y="285" width="30" height="30"/>
-                                <state key="normal" title="视频"/>
+                                <rect key="frame" x="360" y="285" width="60" height="30"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRX-vT-3td" customClass="YCMultimediaShowBtn">
-                                <rect key="frame" x="225" y="285" width="30" height="30"/>
+                                <rect key="frame" x="180" y="270" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="3EK-xA-og4"/>
-                                    <constraint firstAttribute="width" constant="30" id="c9s-kW-U8L"/>
+                                    <constraint firstAttribute="height" constant="60" id="3EK-xA-og4"/>
+                                    <constraint firstAttribute="width" constant="60" id="c9s-kW-U8L"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="1.jpg"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="g6u-rU-hnq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5jl-Rb-0B1"/>
                             <constraint firstItem="JvB-pR-N4y" firstAttribute="leading" secondItem="dRX-vT-3td" secondAttribute="trailing" constant="30" id="Ed6-8H-Vqr"/>
+                            <constraint firstItem="tOX-tv-I8K" firstAttribute="width" secondItem="dRX-vT-3td" secondAttribute="height" multiplier="1:1" id="FGL-iJ-MO6"/>
                             <constraint firstItem="JvB-pR-N4y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KEx-I4-fy0"/>
+                            <constraint firstItem="JvB-pR-N4y" firstAttribute="width" secondItem="dRX-vT-3td" secondAttribute="height" multiplier="1:1" id="KUv-eT-uR6"/>
                             <constraint firstItem="dRX-vT-3td" firstAttribute="centerY" secondItem="JvB-pR-N4y" secondAttribute="centerY" id="PxE-a0-5xW"/>
                             <constraint firstItem="tOX-tv-I8K" firstAttribute="centerY" secondItem="JvB-pR-N4y" secondAttribute="centerY" id="bJj-Yu-4tI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="g6u-rU-hnq" secondAttribute="bottom" id="iXm-d9-uRX"/>
                             <constraint firstItem="tOX-tv-I8K" firstAttribute="leading" secondItem="JvB-pR-N4y" secondAttribute="trailing" constant="30" id="l51-kp-7Rb"/>
                             <constraint firstItem="JvB-pR-N4y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lYX-0V-bJU"/>
+                            <constraint firstAttribute="trailing" secondItem="g6u-rU-hnq" secondAttribute="trailing" id="nTg-af-kvT"/>
+                            <constraint firstItem="g6u-rU-hnq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sMs-f2-a6e"/>
                         </constraints>
                     </view>
                     <connections>
@@ -57,5 +65,6 @@
     </scenes>
     <resources>
         <image name="1.jpg" width="1024" height="724"/>
+        <image name="superYang" width="900" height="600"/>
     </resources>
 </document>

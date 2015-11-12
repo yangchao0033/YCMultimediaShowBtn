@@ -67,11 +67,11 @@ typedef NS_ENUM(NSUInteger, YCMultimediaShowBtnType) {
         _mediaType = YCMultimediaShowBtnTypeImage;
     } else if ([lastComponent containsString:@".mov"] || [lastComponent containsString:@".MOV"]) {
         _mediaType = YCMultimediaShowBtnTypeVideo;
-//        [self setBackgroundImage:[UIImage imageNamed:@"video_slt"] forState:(UIControlStateNormal)];
+        [self setBackgroundImage:[UIImage imageNamed:@"video_slt"] forState:(UIControlStateNormal)];
         self.hidden = NO;
     } else if ([lastComponent containsString:@".mp3"] || [lastComponent containsString:@".wav"]){
         _mediaType = YCMultimediaShowBtnTypeVoice;
-//        [self setBackgroundImage:[UIImage imageNamed:@"sound_slt"] forState:(UIControlStateNormal)];
+        [self setBackgroundImage:[UIImage imageNamed:@"sound_slt"] forState:(UIControlStateNormal)];
         self.hidden = NO;
     } else {
         self.hidden = YES;

@@ -38,6 +38,19 @@
     
 //    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"testMOV" ofType:@"mov"];
     
+    
+    /** 缓存到数组中，防止被误修改 */
+    NSArray *tempFilePaths = @[imagePath, voicePath, videoPath];
+    CGFloat margin = 10;
+    CGFloat btnH = 60;
+    CGFloat startOffsetX = 100;
+    CGFloat startOffsetY = 100;
+    [tempFilePaths enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        CGFloat btnX = idx * (btnH + margin);
+        YCMultimediaShowBtn *btn = [YCMultimediaShowBtn multimediaShowBtnWithVc:self filePath:(NSString *)obj];
+        btn.frame = CGRectMake(startOffsetX + btnX, startOffsetY, btnH, btnH);
+        [self.view addSubview:btn];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
