@@ -36,7 +36,6 @@
     self.voiceBtn.filePath = voicePath;
     self.vedioBtn.showOnVC = self;
     
-//    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"testMOV" ofType:@"mov"];
     
     
     /** 缓存到数组中，防止被误修改 */
@@ -60,13 +59,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-//    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"testMOV" ofType:@"mov"];
-//    MPMoviePlayerViewController *playerViewController  = [[MPMoviePlayerViewController alloc]initWithContentURL:[NSURL fileURLWithPath:videoPath]];
-//    [self presentMoviePlayerViewControllerAnimated:playerViewController];
-//    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"1" ofType:@"jpg"];
-//    self.voiceBtn.filePath = imagePath;
-//    self.view.backgroundColor = [UIColor redColor];
-//    self.vedioBtn.showOnVC = self;
+
 }
 
 
