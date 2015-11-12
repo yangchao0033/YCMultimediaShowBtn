@@ -1,0 +1,10 @@
+PODS:
+  - LxDBAnything (1.0.0)
+
+DEPENDENCIES:
+  - LxDBAnything (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  LxDBAnything: 1bb5e0312799c571a33f0ef5d56efb096f27d3a1
+
+COCOAPODS: 0.39.0

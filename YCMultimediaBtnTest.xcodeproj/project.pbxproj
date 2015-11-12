@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17816FFE1BF1D78C00B4F105 /* Katy Perry - Roar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17816FFD1BF1D78C00B4F105 /* Katy Perry - Roar.mp3 */; settings = {ASSET_TAGS = (); }; };
+		178170091BF1DB0F00B4F105 /* YCAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 178170021BF1DB0F00B4F105 /* YCAudioPlayer.m */; settings = {ASSET_TAGS = (); }; };
+		1781700A1BF1DB0F00B4F105 /* YCAudioPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178170031BF1DB0F00B4F105 /* YCAudioPlayer.xib */; settings = {ASSET_TAGS = (); }; };
+		1781700C1BF1DB0F00B4F105 /* YCPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 178170081BF1DB0F00B4F105 /* YCPhotoBrowser.m */; settings = {ASSET_TAGS = (); }; };
+		1790CB461BF420AA00F742FC /* YCMultimediaShowBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1790CB451BF420AA00F742FC /* YCMultimediaShowBtn.m */; settings = {ASSET_TAGS = (); }; };
+		1790CB4B1BF420C200F742FC /* YCPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1790CB491BF420C200F742FC /* YCPlayerViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1790CB4C1BF420C200F742FC /* YCPlayerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1790CB4A1BF420C200F742FC /* YCPlayerViewController.storyboard */; settings = {ASSET_TAGS = (); }; };
+		17D57FD31BF02A9C00BE5422 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D57FD21BF02A9C00BE5422 /* main.m */; };
+		17D57FD61BF02A9C00BE5422 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D57FD51BF02A9C00BE5422 /* AppDelegate.m */; };
+		17D57FD91BF02A9C00BE5422 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D57FD81BF02A9C00BE5422 /* ViewController.m */; };
+		17D57FDC1BF02A9C00BE5422 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D57FDA1BF02A9C00BE5422 /* Main.storyboard */; };
+		17D57FDE1BF02A9C00BE5422 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17D57FDD1BF02A9C00BE5422 /* Assets.xcassets */; };
+		17D57FE11BF02A9C00BE5422 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D57FDF1BF02A9C00BE5422 /* LaunchScreen.storyboard */; };
+		17D57FEC1BF02A9C00BE5422 /* YCMultimediaBtnTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D57FEB1BF02A9C00BE5422 /* YCMultimediaBtnTestTests.m */; };
+		17D57FF71BF02A9C00BE5422 /* YCMultimediaBtnTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D57FF61BF02A9C00BE5422 /* YCMultimediaBtnTestUITests.m */; };
+		17D5800B1BF048EE00BE5422 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17D5800A1BF048EE00BE5422 /* 1.jpg */; settings = {ASSET_TAGS = (); }; };
+		17D580101BF06D9500BE5422 /* testMOV.mov in Resources */ = {isa = PBXBuildFile; fileRef = 17D5800F1BF06D9500BE5422 /* testMOV.mov */; settings = {ASSET_TAGS = (); }; };
+		17D580121BF0706600BE5422 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D580111BF0706600BE5422 /* MediaPlayer.framework */; };
+		17EDF49F1BF3196D0047D8F3 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17EDF49E1BF3196D0047D8F3 /* AVKit.framework */; };
+		C7D6A9EEDA0B172BC6A88943 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35AB25F34E31816B540B70CF /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17D57FE81BF02A9C00BE5422 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17D57FC61BF02A9C00BE5422 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17D57FCD1BF02A9C00BE5422;
+			remoteInfo = YCMultimediaBtnTest;
+		};
+		17D57FF31BF02A9C00BE5422 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17D57FC61BF02A9C00BE5422 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17D57FCD1BF02A9C00BE5422;
+			remoteInfo = YCMultimediaBtnTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08D2B447DA81A8BB66BB0201 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		17816FFD1BF1D78C00B4F105 /* Katy Perry - Roar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Katy Perry - Roar.mp3"; sourceTree = "<group>"; };
+		178170011BF1DB0F00B4F105 /* YCAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCAudioPlayer.h; sourceTree = "<group>"; };
+		178170021BF1DB0F00B4F105 /* YCAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCAudioPlayer.m; sourceTree = "<group>"; };
+		178170031BF1DB0F00B4F105 /* YCAudioPlayer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YCAudioPlayer.xib; sourceTree = "<group>"; };
+		178170071BF1DB0F00B4F105 /* YCPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPhotoBrowser.h; sourceTree = "<group>"; };
+		178170081BF1DB0F00B4F105 /* YCPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPhotoBrowser.m; sourceTree = "<group>"; };
+		1790CB441BF420AA00F742FC /* YCMultimediaShowBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMultimediaShowBtn.h; sourceTree = "<group>"; };
+		1790CB451BF420AA00F742FC /* YCMultimediaShowBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMultimediaShowBtn.m; sourceTree = "<group>"; };
+		1790CB481BF420C200F742FC /* YCPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPlayerViewController.h; sourceTree = "<group>"; };
+		1790CB491BF420C200F742FC /* YCPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPlayerViewController.m; sourceTree = "<group>"; };
+		1790CB4A1BF420C200F742FC /* YCPlayerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YCPlayerViewController.storyboard; sourceTree = "<group>"; };
+		17D57FCE1BF02A9C00BE5422 /* YCMultimediaBtnTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCMultimediaBtnTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17D57FD21BF02A9C00BE5422 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17D57FD41BF02A9C00BE5422 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		17D57FD51BF02A9C00BE5422 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		17D57FD71BF02A9C00BE5422 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		17D57FD81BF02A9C00BE5422 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		17D57FDB1BF02A9C00BE5422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17D57FDD1BF02A9C00BE5422 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17D57FE01BF02A9C00BE5422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		17D57FE21BF02A9C00BE5422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17D57FE71BF02A9C00BE5422 /* YCMultimediaBtnTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YCMultimediaBtnTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17D57FEB1BF02A9C00BE5422 /* YCMultimediaBtnTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCMultimediaBtnTestTests.m; sourceTree = "<group>"; };
+		17D57FED1BF02A9C00BE5422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17D57FF21BF02A9C00BE5422 /* YCMultimediaBtnTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YCMultimediaBtnTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17D57FF61BF02A9C00BE5422 /* YCMultimediaBtnTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCMultimediaBtnTestUITests.m; sourceTree = "<group>"; };
+		17D57FF81BF02A9C00BE5422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17D5800A1BF048EE00BE5422 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = "../../../工作文件/1.jpg"; sourceTree = "<group>"; };
+		17D5800F1BF06D9500BE5422 /* testMOV.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = testMOV.mov; path = ../../../../testMOV.mov; sourceTree = "<group>"; };
+		17D580111BF0706600BE5422 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		17EDF49E1BF3196D0047D8F3 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		35AB25F34E31816B540B70CF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A3500BDC09F8F8B5515344 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17D57FCB1BF02A9C00BE5422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17EDF49F1BF3196D0047D8F3 /* AVKit.framework in Frameworks */,
+				17D580121BF0706600BE5422 /* MediaPlayer.framework in Frameworks */,
+				C7D6A9EEDA0B172BC6A88943 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17D57FE41BF02A9C00BE5422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17D57FEF1BF02A9C00BE5422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17816FFF1BF1DB0F00B4F105 /* YCMultimediaShowBtn */ = {
+			isa = PBXGroup;
+			children = (
+				1790CB471BF420C200F742FC /* YCPlayerViewController */,
+				1790CB431BF420AA00F742FC /* YCMultimediaShowBtn */,
+				178170001BF1DB0F00B4F105 /* YCAudioPlayer */,
+				178170061BF1DB0F00B4F105 /* YCPhotoBrowser */,
+			);
+			path = YCMultimediaShowBtn;
+			sourceTree = "<group>";
+		};
+		178170001BF1DB0F00B4F105 /* YCAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				178170011BF1DB0F00B4F105 /* YCAudioPlayer.h */,
+				178170021BF1DB0F00B4F105 /* YCAudioPlayer.m */,
+				178170031BF1DB0F00B4F105 /* YCAudioPlayer.xib */,
+			);
+			path = YCAudioPlayer;
+			sourceTree = "<group>";
+		};
+		178170061BF1DB0F00B4F105 /* YCPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				178170071BF1DB0F00B4F105 /* YCPhotoBrowser.h */,
+				178170081BF1DB0F00B4F105 /* YCPhotoBrowser.m */,
+			);
+			path = YCPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		1790CB431BF420AA00F742FC /* YCMultimediaShowBtn */ = {
+			isa = PBXGroup;
+			children = (
+				1790CB441BF420AA00F742FC /* YCMultimediaShowBtn.h */,
+				1790CB451BF420AA00F742FC /* YCMultimediaShowBtn.m */,
+			);
+			path = YCMultimediaShowBtn;
+			sourceTree = "<group>";
+		};
+		1790CB471BF420C200F742FC /* YCPlayerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1790CB481BF420C200F742FC /* YCPlayerViewController.h */,
+				1790CB491BF420C200F742FC /* YCPlayerViewController.m */,
+				1790CB4A1BF420C200F742FC /* YCPlayerViewController.storyboard */,
+			);
+			path = YCPlayerViewController;
+			sourceTree = "<group>";
+		};
+		17D57FC51BF02A9C00BE5422 = {
+			isa = PBXGroup;
+			children = (
+				17D57FD01BF02A9C00BE5422 /* YCMultimediaBtnTest */,
+				17D57FEA1BF02A9C00BE5422 /* YCMultimediaBtnTestTests */,
+				17D57FF51BF02A9C00BE5422 /* YCMultimediaBtnTestUITests */,
+				17D57FCF1BF02A9C00BE5422 /* Products */,
+				8F9D6E1B95DB3E1D80B7EE22 /* Pods */,
+				214DBB8B8D1ED0CAD3B7DB2A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		17D57FCF1BF02A9C00BE5422 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17D57FCE1BF02A9C00BE5422 /* YCMultimediaBtnTest.app */,
+				17D57FE71BF02A9C00BE5422 /* YCMultimediaBtnTestTests.xctest */,
+				17D57FF21BF02A9C00BE5422 /* YCMultimediaBtnTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17D57FD01BF02A9C00BE5422 /* YCMultimediaBtnTest */ = {
+			isa = PBXGroup;
+			children = (
+				17D57FD41BF02A9C00BE5422 /* AppDelegate.h */,
+				17D57FD51BF02A9C00BE5422 /* AppDelegate.m */,
+				17D57FD71BF02A9C00BE5422 /* ViewController.h */,
+				17D57FD81BF02A9C00BE5422 /* ViewController.m */,
+				17D57FDA1BF02A9C00BE5422 /* Main.storyboard */,
+				17D57FDD1BF02A9C00BE5422 /* Assets.xcassets */,
+				17D57FDF1BF02A9C00BE5422 /* LaunchScreen.storyboard */,
+				17D57FE21BF02A9C00BE5422 /* Info.plist */,
+				17D57FD11BF02A9C00BE5422 /* Supporting Files */,
+			);
+			path = YCMultimediaBtnTest;
+			sourceTree = "<group>";
+		};
+		17D57FD11BF02A9C00BE5422 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17816FFF1BF1DB0F00B4F105 /* YCMultimediaShowBtn */,
+				17816FFD1BF1D78C00B4F105 /* Katy Perry - Roar.mp3 */,
+				17D5800F1BF06D9500BE5422 /* testMOV.mov */,
+				17D5800A1BF048EE00BE5422 /* 1.jpg */,
+				17D57FD21BF02A9C00BE5422 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17D57FEA1BF02A9C00BE5422 /* YCMultimediaBtnTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				17D57FEB1BF02A9C00BE5422 /* YCMultimediaBtnTestTests.m */,
+				17D57FED1BF02A9C00BE5422 /* Info.plist */,
+			);
+			path = YCMultimediaBtnTestTests;
+			sourceTree = "<group>";
+		};
+		17D57FF51BF02A9C00BE5422 /* YCMultimediaBtnTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				17D57FF61BF02A9C00BE5422 /* YCMultimediaBtnTestUITests.m */,
+				17D57FF81BF02A9C00BE5422 /* Info.plist */,
+			);
+			path = YCMultimediaBtnTestUITests;
+			sourceTree = "<group>";
+		};
+		214DBB8B8D1ED0CAD3B7DB2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17EDF49E1BF3196D0047D8F3 /* AVKit.framework */,
+				17D580111BF0706600BE5422 /* MediaPlayer.framework */,
+				35AB25F34E31816B540B70CF /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F9D6E1B95DB3E1D80B7EE22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08D2B447DA81A8BB66BB0201 /* Pods.debug.xcconfig */,
+				72A3500BDC09F8F8B5515344 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17D57FCD1BF02A9C00BE5422 /* YCMultimediaBtnTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17D57FFB1BF02A9C00BE5422 /* Build configuration list for PBXNativeTarget "YCMultimediaBtnTest" */;
+			buildPhases = (
+				D96C681FAB2CB50F35DE1B7A /* Check Pods Manifest.lock */,
+				17D57FCA1BF02A9C00BE5422 /* Sources */,
+				17D57FCB1BF02A9C00BE5422 /* Frameworks */,
+				17D57FCC1BF02A9C00BE5422 /* Resources */,
+				AF8CAF5CD9B066CF40BCE016 /* Embed Pods Frameworks */,
+				4A21F319AB1D9BDD7A384F6E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YCMultimediaBtnTest;
+			productName = YCMultimediaBtnTest;
+			productReference = 17D57FCE1BF02A9C00BE5422 /* YCMultimediaBtnTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17D57FE61BF02A9C00BE5422 /* YCMultimediaBtnTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17D57FFE1BF02A9C00BE5422 /* Build configuration list for PBXNativeTarget "YCMultimediaBtnTestTests" */;
+			buildPhases = (
+				17D57FE31BF02A9C00BE5422 /* Sources */,
+				17D57FE41BF02A9C00BE5422 /* Frameworks */,
+				17D57FE51BF02A9C00BE5422 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17D57FE91BF02A9C00BE5422 /* PBXTargetDependency */,
+			);
+			name = YCMultimediaBtnTestTests;
+			productName = YCMultimediaBtnTestTests;
+			productReference = 17D57FE71BF02A9C00BE5422 /* YCMultimediaBtnTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		17D57FF11BF02A9C00BE5422 /* YCMultimediaBtnTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17D580011BF02A9C00BE5422 /* Build configuration list for PBXNativeTarget "YCMultimediaBtnTestUITests" */;
+			buildPhases = (
+				17D57FEE1BF02A9C00BE5422 /* Sources */,
+				17D57FEF1BF02A9C00BE5422 /* Frameworks */,
+				17D57FF01BF02A9C00BE5422 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17D57FF41BF02A9C00BE5422 /* PBXTargetDependency */,
+			);
+			name = YCMultimediaBtnTestUITests;
+			productName = YCMultimediaBtnTestUITests;
+			productReference = 17D57FF21BF02A9C00BE5422 /* YCMultimediaBtnTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17D57FC61BF02A9C00BE5422 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "超杨";
+				TargetAttributes = {
+					17D57FCD1BF02A9C00BE5422 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 4SURL4UGYU;
+					};
+					17D57FE61BF02A9C00BE5422 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 4SURL4UGYU;
+						TestTargetID = 17D57FCD1BF02A9C00BE5422;
+					};
+					17D57FF11BF02A9C00BE5422 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 4SURL4UGYU;
+						TestTargetID = 17D57FCD1BF02A9C00BE5422;
+					};
+				};
+			};
+			buildConfigurationList = 17D57FC91BF02A9C00BE5422 /* Build configuration list for PBXProject "YCMultimediaBtnTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17D57FC51BF02A9C00BE5422;
+			productRefGroup = 17D57FCF1BF02A9C00BE5422 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17D57FCD1BF02A9C00BE5422 /* YCMultimediaBtnTest */,
+				17D57FE61BF02A9C00BE5422 /* YCMultimediaBtnTestTests */,
+				17D57FF11BF02A9C00BE5422 /* YCMultimediaBtnTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17D57FCC1BF02A9C00BE5422 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1790CB4C1BF420C200F742FC /* YCPlayerViewController.storyboard in Resources */,
+				17D580101BF06D9500BE5422 /* testMOV.mov in Resources */,
+				17D5800B1BF048EE00BE5422 /* 1.jpg in Resources */,
+				1781700A1BF1DB0F00B4F105 /* YCAudioPlayer.xib in Resources */,
+				17816FFE1BF1D78C00B4F105 /* Katy Perry - Roar.mp3 in Resources */,
+				17D57FE11BF02A9C00BE5422 /* LaunchScreen.storyboard in Resources */,
+				17D57FDE1BF02A9C00BE5422 /* Assets.xcassets in Resources */,
+				17D57FDC1BF02A9C00BE5422 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17D57FE51BF02A9C00BE5422 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17D57FF01BF02A9C00BE5422 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A21F319AB1D9BDD7A384F6E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF8CAF5CD9B066CF40BCE016 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D96C681FAB2CB50F35DE1B7A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17D57FCA1BF02A9C00BE5422 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1781700C1BF1DB0F00B4F105 /* YCPhotoBrowser.m in Sources */,
+				17D57FD91BF02A9C00BE5422 /* ViewController.m in Sources */,
+				17D57FD61BF02A9C00BE5422 /* AppDelegate.m in Sources */,
+				1790CB4B1BF420C200F742FC /* YCPlayerViewController.m in Sources */,
+				1790CB461BF420AA00F742FC /* YCMultimediaShowBtn.m in Sources */,
+				17D57FD31BF02A9C00BE5422 /* main.m in Sources */,
+				178170091BF1DB0F00B4F105 /* YCAudioPlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17D57FE31BF02A9C00BE5422 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D57FEC1BF02A9C00BE5422 /* YCMultimediaBtnTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17D57FEE1BF02A9C00BE5422 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D57FF71BF02A9C00BE5422 /* YCMultimediaBtnTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17D57FE91BF02A9C00BE5422 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17D57FCD1BF02A9C00BE5422 /* YCMultimediaBtnTest */;
+			targetProxy = 17D57FE81BF02A9C00BE5422 /* PBXContainerItemProxy */;
+		};
+		17D57FF41BF02A9C00BE5422 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17D57FCD1BF02A9C00BE5422 /* YCMultimediaBtnTest */;
+			targetProxy = 17D57FF31BF02A9C00BE5422 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17D57FDA1BF02A9C00BE5422 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17D57FDB1BF02A9C00BE5422 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		17D57FDF1BF02A9C00BE5422 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17D57FE01BF02A9C00BE5422 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17D57FF91BF02A9C00BE5422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		17D57FFA1BF02A9C00BE5422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17D57FFC1BF02A9C00BE5422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08D2B447DA81A8BB66BB0201 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YCMultimediaBtnTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.yang.www.YCMultimediaBtnTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		17D57FFD1BF02A9C00BE5422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72A3500BDC09F8F8B5515344 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YCMultimediaBtnTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.yang.www.YCMultimediaBtnTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		17D57FFF1BF02A9C00BE5422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YCMultimediaBtnTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.yang.www.YCMultimediaBtnTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YCMultimediaBtnTest.app/YCMultimediaBtnTest";
+			};
+			name = Debug;
+		};
+		17D580001BF02A9C00BE5422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YCMultimediaBtnTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.yang.www.YCMultimediaBtnTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YCMultimediaBtnTest.app/YCMultimediaBtnTest";
+			};
+			name = Release;
+		};
+		17D580021BF02A9C00BE5422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YCMultimediaBtnTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.yang.www.YCMultimediaBtnTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YCMultimediaBtnTest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		17D580031BF02A9C00BE5422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YCMultimediaBtnTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.yang.www.YCMultimediaBtnTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YCMultimediaBtnTest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17D57FC91BF02A9C00BE5422 /* Build configuration list for PBXProject "YCMultimediaBtnTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17D57FF91BF02A9C00BE5422 /* Debug */,
+				17D57FFA1BF02A9C00BE5422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17D57FFB1BF02A9C00BE5422 /* Build configuration list for PBXNativeTarget "YCMultimediaBtnTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17D57FFC1BF02A9C00BE5422 /* Debug */,
+				17D57FFD1BF02A9C00BE5422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17D57FFE1BF02A9C00BE5422 /* Build configuration list for PBXNativeTarget "YCMultimediaBtnTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17D57FFF1BF02A9C00BE5422 /* Debug */,
+				17D580001BF02A9C00BE5422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17D580011BF02A9C00BE5422 /* Build configuration list for PBXNativeTarget "YCMultimediaBtnTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17D580021BF02A9C00BE5422 /* Debug */,
+				17D580031BF02A9C00BE5422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17D57FC61BF02A9C00BE5422 /* Project object */;
+}
