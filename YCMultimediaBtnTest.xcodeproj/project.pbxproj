@@ -14,6 +14,8 @@
 		1790CB461BF420AA00F742FC /* YCMultimediaShowBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1790CB451BF420AA00F742FC /* YCMultimediaShowBtn.m */; settings = {ASSET_TAGS = (); }; };
 		1790CB4B1BF420C200F742FC /* YCPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1790CB491BF420C200F742FC /* YCPlayerViewController.m */; settings = {ASSET_TAGS = (); }; };
 		1790CB4C1BF420C200F742FC /* YCPlayerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1790CB4A1BF420C200F742FC /* YCPlayerViewController.storyboard */; settings = {ASSET_TAGS = (); }; };
+		1790CB4E1BF4219400F742FC /* testMOV.mov in Resources */ = {isa = PBXBuildFile; fileRef = 1790CB4D1BF4219400F742FC /* testMOV.mov */; settings = {ASSET_TAGS = (); }; };
+		1790CB501BF421B100F742FC /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1790CB4F1BF421B100F742FC /* 1.jpg */; settings = {ASSET_TAGS = (); }; };
 		17D57FD31BF02A9C00BE5422 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D57FD21BF02A9C00BE5422 /* main.m */; };
 		17D57FD61BF02A9C00BE5422 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D57FD51BF02A9C00BE5422 /* AppDelegate.m */; };
 		17D57FD91BF02A9C00BE5422 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D57FD81BF02A9C00BE5422 /* ViewController.m */; };
@@ -22,8 +24,6 @@
 		17D57FE11BF02A9C00BE5422 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D57FDF1BF02A9C00BE5422 /* LaunchScreen.storyboard */; };
 		17D57FEC1BF02A9C00BE5422 /* YCMultimediaBtnTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D57FEB1BF02A9C00BE5422 /* YCMultimediaBtnTestTests.m */; };
 		17D57FF71BF02A9C00BE5422 /* YCMultimediaBtnTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D57FF61BF02A9C00BE5422 /* YCMultimediaBtnTestUITests.m */; };
-		17D5800B1BF048EE00BE5422 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17D5800A1BF048EE00BE5422 /* 1.jpg */; settings = {ASSET_TAGS = (); }; };
-		17D580101BF06D9500BE5422 /* testMOV.mov in Resources */ = {isa = PBXBuildFile; fileRef = 17D5800F1BF06D9500BE5422 /* testMOV.mov */; settings = {ASSET_TAGS = (); }; };
 		17D580121BF0706600BE5422 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D580111BF0706600BE5422 /* MediaPlayer.framework */; };
 		17EDF49F1BF3196D0047D8F3 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17EDF49E1BF3196D0047D8F3 /* AVKit.framework */; };
 		C7D6A9EEDA0B172BC6A88943 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35AB25F34E31816B540B70CF /* libPods.a */; };
@@ -59,6 +59,8 @@
 		1790CB481BF420C200F742FC /* YCPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPlayerViewController.h; sourceTree = "<group>"; };
 		1790CB491BF420C200F742FC /* YCPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPlayerViewController.m; sourceTree = "<group>"; };
 		1790CB4A1BF420C200F742FC /* YCPlayerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YCPlayerViewController.storyboard; sourceTree = "<group>"; };
+		1790CB4D1BF4219400F742FC /* testMOV.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = testMOV.mov; sourceTree = "<group>"; };
+		1790CB4F1BF421B100F742FC /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		17D57FCE1BF02A9C00BE5422 /* YCMultimediaBtnTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCMultimediaBtnTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D57FD21BF02A9C00BE5422 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17D57FD41BF02A9C00BE5422 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,8 +77,6 @@
 		17D57FF21BF02A9C00BE5422 /* YCMultimediaBtnTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YCMultimediaBtnTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D57FF61BF02A9C00BE5422 /* YCMultimediaBtnTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCMultimediaBtnTestUITests.m; sourceTree = "<group>"; };
 		17D57FF81BF02A9C00BE5422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17D5800A1BF048EE00BE5422 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = "../../../工作文件/1.jpg"; sourceTree = "<group>"; };
-		17D5800F1BF06D9500BE5422 /* testMOV.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = testMOV.mov; path = ../../../../testMOV.mov; sourceTree = "<group>"; };
 		17D580111BF0706600BE5422 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		17EDF49E1BF3196D0047D8F3 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		35AB25F34E31816B540B70CF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,8 +203,8 @@
 			children = (
 				17816FFF1BF1DB0F00B4F105 /* YCMultimediaShowBtn */,
 				17816FFD1BF1D78C00B4F105 /* Katy Perry - Roar.mp3 */,
-				17D5800F1BF06D9500BE5422 /* testMOV.mov */,
-				17D5800A1BF048EE00BE5422 /* 1.jpg */,
+				1790CB4D1BF4219400F742FC /* testMOV.mov */,
+				1790CB4F1BF421B100F742FC /* 1.jpg */,
 				17D57FD21BF02A9C00BE5422 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -357,11 +357,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1790CB4C1BF420C200F742FC /* YCPlayerViewController.storyboard in Resources */,
-				17D580101BF06D9500BE5422 /* testMOV.mov in Resources */,
-				17D5800B1BF048EE00BE5422 /* 1.jpg in Resources */,
 				1781700A1BF1DB0F00B4F105 /* YCAudioPlayer.xib in Resources */,
 				17816FFE1BF1D78C00B4F105 /* Katy Perry - Roar.mp3 in Resources */,
 				17D57FE11BF02A9C00BE5422 /* LaunchScreen.storyboard in Resources */,
+				1790CB4E1BF4219400F742FC /* testMOV.mov in Resources */,
+				1790CB501BF421B100F742FC /* 1.jpg in Resources */,
 				17D57FDE1BF02A9C00BE5422 /* Assets.xcassets in Resources */,
 				17D57FDC1BF02A9C00BE5422 /* Main.storyboard in Resources */,
 			);
