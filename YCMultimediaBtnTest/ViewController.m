@@ -35,6 +35,9 @@
      NSString *voicePath = [[NSBundle mainBundle] pathForResource:@"Katy Perry - Roar" ofType:@"mp3"];
     self.voiceBtn.filePath = voicePath;
     self.vedioBtn.showOnVC = self;
+    
+//    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"testMOV" ofType:@"mov"];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,6 +50,10 @@
 //    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"testMOV" ofType:@"mov"];
 //    MPMoviePlayerViewController *playerViewController  = [[MPMoviePlayerViewController alloc]initWithContentURL:[NSURL fileURLWithPath:videoPath]];
 //    [self presentMoviePlayerViewControllerAnimated:playerViewController];
+//    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"1" ofType:@"jpg"];
+//    self.voiceBtn.filePath = imagePath;
+//    self.view.backgroundColor = [UIColor redColor];
+//    self.vedioBtn.showOnVC = self;
 }
 
 

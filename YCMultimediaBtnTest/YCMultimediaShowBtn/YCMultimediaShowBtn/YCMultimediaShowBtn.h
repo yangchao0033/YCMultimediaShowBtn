@@ -13,7 +13,7 @@
 @interface YCMultimediaShowBtn : UIButton
 
 /** YCMultimediaShowBtn所在的控制器,使用weak避免循环引用 */
-@property (nonatomic, strong) IBOutlet UIViewController *showOnVC;
+@property (nonatomic, weak) IBOutlet UIViewController *showOnVC;
 /** 多媒体资源所在路径 */
 @property (nonatomic, copy) IBOutlet NSString *filePath;
 
