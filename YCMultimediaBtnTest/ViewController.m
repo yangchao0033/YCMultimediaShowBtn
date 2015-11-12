@@ -10,6 +10,7 @@
 #import "YCMultimediaShowBtn.h"
 #import <LxDBAnything.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import "UIView+Frame.h"
 
 
 @interface ViewController ()
@@ -44,12 +45,22 @@
     CGFloat btnH = 60;
     CGFloat startOffsetX = 100;
     CGFloat startOffsetY = 100;
+    NSMutableArray *btns = @[].mutableCopy;
     [tempFilePaths enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         CGFloat btnX = idx * (btnH + margin);
         YCMultimediaShowBtn *btn = [YCMultimediaShowBtn multimediaShowBtnWithVc:self filePath:(NSString *)obj];
         btn.frame = CGRectMake(startOffsetX + btnX, startOffsetY, btnH, btnH);
         [self.view addSubview:btn];
+        [btns addObject:btn];
     }];
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        [btns enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            YCMultimediaShowBtn *btn = obj;
+            btn.x = btn.x - 50;
+        }];
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
