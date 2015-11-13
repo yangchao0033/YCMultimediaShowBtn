@@ -10,6 +10,7 @@
 #import "YCPhotoBrowser.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import "YCAudioPlayer.h"
+#import <LxDBAnything.h>
 
 
 typedef NS_ENUM(NSUInteger, YCMultimediaShowBtnType) {
@@ -30,24 +31,43 @@ typedef NS_ENUM(NSUInteger, YCMultimediaShowBtnType) {
 - (void)awakeFromNib
 {
     [super awakeFromNib];
-    
+    [self setUpInterface];
 }
-
-//- (instancetype)init
-//{
-//    if (self = [super init]) {
-//        self = [self initWithShowOnVC:_showOnVC filePath:_filePath];
-//    }
-//    return self;
-//}
 
 - (instancetype)initWithShowOnVC:(UIViewController *)vc filePath:(NSString *)path
 {
     if (self = [super init]) {
+//        LxDBAnyVar([self getDateTimeTOMilliSeconds]);
+        LxDBAnyVar([self getDateTimeTOMilliSeconds:[NSDate date]]);
         self.showOnVC = vc;
         self.filePath = path;
+        [self setUpInterface];
     }
     return self;
+}
+
+//将时间戳转换为NSDate类型
+-(NSDate *)getDateTimeFromMilliSeconds:(long long) miliSeconds
+{
+    NSTimeInterval tempMilli = miliSeconds;
+    NSTimeInterval seconds = tempMilli/1000.0;//这里的.0一定要加上，不然除下来的数据会被截断导致时间不一致
+    NSLog(@"传入的时间戳=%f",seconds);
+    return [NSDate dateWithTimeIntervalSince1970:seconds];
+}
+
+//将NSDate类型的时间转换为时间戳,从1970/1/1开始
+-(long long)getDateTimeTOMilliSeconds:(NSDate *)datetime
+{
+    NSTimeInterval interval = [datetime timeIntervalSince1970];
+    NSLog(@"转换的时间戳=%f",interval);
+    long long totalMilliseconds = interval*1000 ;
+    NSLog(@"totalMilliseconds=%llu",totalMilliseconds);
+    return totalMilliseconds;
+}
+
+- (void)setUpInterface {
+    [self addTarget:self action:@selector(mediaBtnClick:) forControlEvents:(UIControlEventTouchUpInside)];
+    [self addGestureRecognizer:[[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressDelete:)]];
 }
 
 + (instancetype)multimediaShowBtnWithVc:(UIViewController *)vc filePath:(NSString *)path
@@ -76,8 +96,13 @@ typedef NS_ENUM(NSUInteger, YCMultimediaShowBtnType) {
     } else {
         self.hidden = YES;
     }
-    [self addTarget:self action:@selector(mediaBtnClick:) forControlEvents:(UIControlEventTouchUpInside)];
 }
+
+/** 长按手势 */
+- (void)longPressDelete:(UILongPressGestureRecognizer *)ges {
+    
+}
+
 /** 加事件 */
 - (void)mediaBtnClick:(YCMultimediaShowBtn *)btn
 {

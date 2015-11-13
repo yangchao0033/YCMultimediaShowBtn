@@ -28,6 +28,7 @@
 		17D57FEC1BF02A9C00BE5422 /* YCMultimediaBtnTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D57FEB1BF02A9C00BE5422 /* YCMultimediaBtnTestTests.m */; };
 		17D57FF71BF02A9C00BE5422 /* YCMultimediaBtnTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D57FF61BF02A9C00BE5422 /* YCMultimediaBtnTestUITests.m */; };
 		17D580121BF0706600BE5422 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D580111BF0706600BE5422 /* MediaPlayer.framework */; };
+		17DF5FE81BF5E67900836FF3 /* NSDate+YCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DF5FE71BF5E67900836FF3 /* NSDate+YCExtension.m */; settings = {ASSET_TAGS = (); }; };
 		17EC9A2F1BF49ADE0042D0BD /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EC9A2E1BF49ADE0042D0BD /* UIView+Frame.m */; settings = {ASSET_TAGS = (); }; };
 		17EDF49F1BF3196D0047D8F3 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17EDF49E1BF3196D0047D8F3 /* AVKit.framework */; };
 		C7D6A9EEDA0B172BC6A88943 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35AB25F34E31816B540B70CF /* libPods.a */; };
@@ -85,6 +86,8 @@
 		17D57FF61BF02A9C00BE5422 /* YCMultimediaBtnTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCMultimediaBtnTestUITests.m; sourceTree = "<group>"; };
 		17D57FF81BF02A9C00BE5422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17D580111BF0706600BE5422 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		17DF5FE61BF5E67900836FF3 /* NSDate+YCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YCExtension.h"; sourceTree = "<group>"; };
+		17DF5FE71BF5E67900836FF3 /* NSDate+YCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YCExtension.m"; sourceTree = "<group>"; };
 		17EC9A2D1BF49ADE0042D0BD /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		17EC9A2E1BF49ADE0042D0BD /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		17EDF49E1BF3196D0047D8F3 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
@@ -123,6 +126,7 @@
 		17816FFF1BF1DB0F00B4F105 /* YCMultimediaShowBtn */ = {
 			isa = PBXGroup;
 			children = (
+				17DF5FE51BF5E64000836FF3 /* YCDateExtension */,
 				1790CB471BF420C200F742FC /* YCPlayerViewController */,
 				1790CB431BF420AA00F742FC /* YCMultimediaShowBtn */,
 				178170001BF1DB0F00B4F105 /* YCAudioPlayer */,
@@ -240,6 +244,15 @@
 				17D57FF81BF02A9C00BE5422 /* Info.plist */,
 			);
 			path = YCMultimediaBtnTestUITests;
+			sourceTree = "<group>";
+		};
+		17DF5FE51BF5E64000836FF3 /* YCDateExtension */ = {
+			isa = PBXGroup;
+			children = (
+				17DF5FE61BF5E67900836FF3 /* NSDate+YCExtension.h */,
+				17DF5FE71BF5E67900836FF3 /* NSDate+YCExtension.m */,
+			);
+			path = YCDateExtension;
 			sourceTree = "<group>";
 		};
 		214DBB8B8D1ED0CAD3B7DB2A /* Frameworks */ = {
@@ -458,6 +471,7 @@
 				17D57FD91BF02A9C00BE5422 /* ViewController.m in Sources */,
 				17D57FD61BF02A9C00BE5422 /* AppDelegate.m in Sources */,
 				1790CB4B1BF420C200F742FC /* YCPlayerViewController.m in Sources */,
+				17DF5FE81BF5E67900836FF3 /* NSDate+YCExtension.m in Sources */,
 				1790CB461BF420AA00F742FC /* YCMultimediaShowBtn.m in Sources */,
 				17D57FD31BF02A9C00BE5422 /* main.m in Sources */,
 				178170091BF1DB0F00B4F105 /* YCAudioPlayer.m in Sources */,
