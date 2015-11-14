@@ -47,7 +47,9 @@ typedef NS_ENUM(NSUInteger, YCMultimediaShowBtnType) {
 
 - (void)setUpInterface {
     [self addTarget:self action:@selector(mediaBtnClick:) forControlEvents:(UIControlEventTouchUpInside)];
-    [self addGestureRecognizer:[[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressDelete:)]];
+    if (self.longPressEnable) {
+        [self addGestureRecognizer:[[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressDelete:)]];
+    }
 }
 
 + (instancetype)multimediaShowBtnWithVc:(UIViewController *)vc filePath:(NSString *)path
@@ -80,11 +82,21 @@ typedef NS_ENUM(NSUInteger, YCMultimediaShowBtnType) {
 
 /** 长按手势 */
 - (void)longPressDelete:(UILongPressGestureRecognizer *)ges {
-    if (ges.state == UIGestureRecognizerStateBegan) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示：" message:@"确定要删除该项？" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
-        [alert show];
-        
+    switch (ges.state) {
+        case UIGestureRecognizerStateBegan:
+            if ([self.delegate respondsToSelector:@selector(mutimediaShowBtn:longPressBeganAtFilePath:)]) {
+                [self.delegate mutimediaShowBtn:self longPressBeganAtFilePath:self.filePath];
+            }
+            break;
+        case UIGestureRecognizerStateEnded:
+            if ([self.delegate respondsToSelector:@selector(mutimediaShowBtn:longPressEndedAtFilePath:)]) {
+                [self.delegate mutimediaShowBtn:self longPressEndedAtFilePath:self.filePath];
+            }
+            break;
+        default:
+            break;
     }
+\
 }
 
 /** 加事件 */
