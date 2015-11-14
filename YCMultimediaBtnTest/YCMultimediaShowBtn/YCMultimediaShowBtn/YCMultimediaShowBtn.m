@@ -47,9 +47,6 @@ typedef NS_ENUM(NSUInteger, YCMultimediaShowBtnType) {
 
 - (void)setUpInterface {
     [self addTarget:self action:@selector(mediaBtnClick:) forControlEvents:(UIControlEventTouchUpInside)];
-    if (self.longPressEnable) {
-        [self addGestureRecognizer:[[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressDelete:)]];
-    }
 }
 
 + (instancetype)multimediaShowBtnWithVc:(UIViewController *)vc filePath:(NSString *)path
@@ -77,6 +74,14 @@ typedef NS_ENUM(NSUInteger, YCMultimediaShowBtnType) {
         self.hidden = NO;
     } else {
         self.hidden = YES;
+    }
+}
+
+- (void)setLongPressEnable:(BOOL)longPressEnable
+{
+    _longPressEnable = longPressEnable;
+    if (self.longPressEnable) {
+        [self addGestureRecognizer:[[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressDelete:)]];
     }
 }
 
