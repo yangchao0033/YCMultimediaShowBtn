@@ -33,6 +33,8 @@
 @property (nonatomic, copy) IBOutlet NSString *filePath;
 /** 知否支持长按手势 */
 @property (nonatomic, assign) BOOL longPressEnable;
+/** 是否在播放录音，默认为NO，播放录音时会进行音量调整，防止无法听见录音*/
+@property (nonatomic, assign) BOOL playRecordVoice;
 
 @property (nonatomic, weak) id<YCMultimediaShowBtnDelegate> delegate;
 

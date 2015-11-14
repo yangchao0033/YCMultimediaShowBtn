@@ -131,6 +131,7 @@ typedef NS_ENUM(NSUInteger, YCMultimediaShowBtnType) {
     NSURL *url = [NSURL fileURLWithPath:self.filePath];
     YCAudioPlayer *player = [YCAudioPlayer audioPlayerWithUrl:url];
     CGRect frame = CGRectMake(5, [UIScreen mainScreen].bounds.size.height / 2 , [UIScreen mainScreen].bounds.size.width - 10, 180);
+    player.playRecordVoice = self.playRecordVoice;
     [player showPlayerWithPlayerFrameOnWindow:frame];
 }
 

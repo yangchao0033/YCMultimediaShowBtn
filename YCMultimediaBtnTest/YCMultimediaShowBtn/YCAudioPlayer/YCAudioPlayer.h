@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface YCAudioPlayer : UIView
+@property (nonatomic, assign, getter=isPlayeRecordVoice) BOOL playRecordVoice;
 /*!
  *  @author 杨超, 15-11-10 12:11:12
  *

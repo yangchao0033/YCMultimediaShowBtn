@@ -69,6 +69,12 @@ static NSTimeInterval kTitleDisplayDutation = 10;
     [doubleTapGestureRecognizer setNumberOfTapsRequired:2];
     [player.tapControlBtn addGestureRecognizer:doubleTapGestureRecognizer];
     player.endTimeLbl.text = player.endTime;
+    /** 放大播放录制的声音的音量 */
+    if (player.playRecordVoice) {
+        AVAudioSession*audioSession=[AVAudioSession sharedInstance];
+        NSError*err=nil;
+        [audioSession setCategory:AVAudioSessionCategoryPlayback error:&err];
+    }
     return player;
 }
 
