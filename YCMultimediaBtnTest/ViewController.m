@@ -47,7 +47,7 @@
     self.tempFilePaths = @[imagePath, voicePath, videoPath].mutableCopy;
     CGFloat margin = 10;
     CGFloat btnH = 60;
-    CGFloat startOffsetX = 100;
+    CGFloat startOffsetX = 60;
     CGFloat startOffsetY = 100;
     self.btns = @[].mutableCopy;
     [self.tempFilePaths enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -101,8 +101,8 @@
 {
     CGFloat margin = 10;
     CGFloat btnH = 60;
-    CGFloat startOffsetX = 100;
-    CGFloat startOffsetY = 100;
+//    CGFloat startOffsetX = 100;
+//    CGFloat startOffsetY = 100;
     
     
     /** 做动画 */
