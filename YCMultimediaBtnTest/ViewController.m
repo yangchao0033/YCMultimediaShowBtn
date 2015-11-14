@@ -52,6 +52,7 @@
         btn.frame = CGRectMake(startOffsetX + btnX, startOffsetY, btnH, btnH);
         [self.view addSubview:btn];
         [btns addObject:btn];
+        LxDBAnyVar(btn);
     }];
     
     [UIView animateWithDuration:0.5 animations:^{

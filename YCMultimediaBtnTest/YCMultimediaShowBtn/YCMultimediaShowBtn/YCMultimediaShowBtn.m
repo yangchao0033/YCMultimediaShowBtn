@@ -37,8 +37,6 @@ typedef NS_ENUM(NSUInteger, YCMultimediaShowBtnType) {
 - (instancetype)initWithShowOnVC:(UIViewController *)vc filePath:(NSString *)path
 {
     if (self = [super init]) {
-//        LxDBAnyVar([self getDateTimeTOMilliSeconds]);
-        LxDBAnyVar([self getDateTimeTOMilliSeconds:[NSDate date]]);
         self.showOnVC = vc;
         self.filePath = path;
         [self setUpInterface];
@@ -46,24 +44,6 @@ typedef NS_ENUM(NSUInteger, YCMultimediaShowBtnType) {
     return self;
 }
 
-//将时间戳转换为NSDate类型
--(NSDate *)getDateTimeFromMilliSeconds:(long long) miliSeconds
-{
-    NSTimeInterval tempMilli = miliSeconds;
-    NSTimeInterval seconds = tempMilli/1000.0;//这里的.0一定要加上，不然除下来的数据会被截断导致时间不一致
-    NSLog(@"传入的时间戳=%f",seconds);
-    return [NSDate dateWithTimeIntervalSince1970:seconds];
-}
-
-//将NSDate类型的时间转换为时间戳,从1970/1/1开始
--(long long)getDateTimeTOMilliSeconds:(NSDate *)datetime
-{
-    NSTimeInterval interval = [datetime timeIntervalSince1970];
-    NSLog(@"转换的时间戳=%f",interval);
-    long long totalMilliseconds = interval*1000 ;
-    NSLog(@"totalMilliseconds=%llu",totalMilliseconds);
-    return totalMilliseconds;
-}
 
 - (void)setUpInterface {
     [self addTarget:self action:@selector(mediaBtnClick:) forControlEvents:(UIControlEventTouchUpInside)];
@@ -100,7 +80,11 @@ typedef NS_ENUM(NSUInteger, YCMultimediaShowBtnType) {
 
 /** 长按手势 */
 - (void)longPressDelete:(UILongPressGestureRecognizer *)ges {
-    
+    if (ges.state == UIGestureRecognizerStateBegan) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示：" message:@"确定要删除该项？" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+        [alert show];
+        
+    }
 }
 
 /** 加事件 */
